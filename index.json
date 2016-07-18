@@ -1,1 +1,46 @@
-{}
+{
+    "[Note ID: cc4e2b7fb5cb9df44cb8faae688a287d]": {
+        "creationTime": "2016-07-18 20:11:26",
+        "enCreationDate": "20160718T201149",
+        "lastSyncDate": null,
+        "enModificationDate": "20160718T201157",
+        "modificationTime": "2016-07-18 20:11:57",
+        "metaDate": null,
+        "dir": "20160718/",
+        "path": "/Users/lumint/.atom/evnd/20160718",
+        "title": "Domain Driven Design",
+        "noteLink": null,
+        "tags": [
+            "evnd",
+            "code",
+            "microservice"
+        ],
+        "notebook": {
+            "name": "Business",
+            "type": "synchronized"
+        },
+        "enExportedFiles": [],
+        "format": "Markdown",
+        "fnStem": "domain_driven_design",
+        "enml": null,
+        "attachments": {},
+        "addAttachments": false,
+        "text": null,
+        "html": null,
+        "rawHTML": null,
+        "css": null,
+        "syncdContent": null,
+        "id": "[Note ID: cc4e2b7fb5cb9df44cb8faae688a287d]",
+        "header": "<head><title>Domain Driven Design</title><link rel=\"stylesheet\" type=\"text/css\" href=\"domain_driven_design_style.css\"></head>",
+        "queryString": " created:20160718T201147 -created:20160718T201151",
+        "renderOptions": {
+            "mathjax": true
+        },
+        "contentMD5": "1867ac79544485d34c8a6a41a007618a",
+        "filePath": "/Users/lumint/.atom/evnd/20160718/domain_driven_design.markdown",
+        "moved": false
+    }
+}n.markdown",
+        "moved": false
+    }
+}
