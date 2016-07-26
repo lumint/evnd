@@ -2,14 +2,14 @@
     "[Note ID: cc4e2b7fb5cb9df44cb8faae688a287d]": {
         "creationTime": "2016-07-18 20:11:26",
         "enCreationDate": "20160718T201149",
-        "lastSyncDate": null,
-        "enModificationDate": "20160718T201157",
-        "modificationTime": "2016-07-18 20:11:57",
+        "lastSyncDate": "20160718T201157",
+        "enModificationDate": "20160726T171652",
+        "modificationTime": "2016-07-26 17:16:06",
         "metaDate": null,
         "dir": "20160718/",
         "path": "/Users/lumint/.atom/evnd/20160718",
         "title": "Domain Driven Design",
-        "noteLink": null,
+        "noteLink": "evernote:///view/2147483647/s482/9f9bda53-d331-49c0-a792-76b04a52f850/9f9bda53-d331-49c0-a792-76b04a52f850/",
         "tags": [
             "evnd",
             "code",
@@ -19,7 +19,10 @@
             "name": "Business",
             "type": "synchronized"
         },
-        "enExportedFiles": [],
+        "enExportedFiles": [
+            "/Users/lumint/.atom/evnd/20160718/domain_driven_design_evernote.html/",
+            "/Users/lumint/.atom/evnd/20160718/domain_driven_design_evernote.enex"
+        ],
         "format": "Markdown",
         "fnStem": "domain_driven_design",
         "enml": null,
@@ -32,15 +35,12 @@
         "syncdContent": null,
         "id": "[Note ID: cc4e2b7fb5cb9df44cb8faae688a287d]",
         "header": "<head><title>Domain Driven Design</title><link rel=\"stylesheet\" type=\"text/css\" href=\"domain_driven_design_style.css\"></head>",
-        "queryString": " created:20160718T201147 -created:20160718T201151",
+        "queryString": "[Note ID: cc4e2b7fb5cb9df44cb8faae688a287d] created:20160718T201147 -created:20160718T201151",
         "renderOptions": {
             "mathjax": true
         },
-        "contentMD5": "1867ac79544485d34c8a6a41a007618a",
+        "contentMD5": "8df54853f256b92c05adebb35d181323",
         "filePath": "/Users/lumint/.atom/evnd/20160718/domain_driven_design.markdown",
-        "moved": false
-    }
-}n.markdown",
         "moved": false
     }
 }

@@ -8,13 +8,7 @@ end readFile
 set newcontent to readFile("/Users/lumint/.atom/evnd/20160718/domain_driven_design.html")
 set infostr to ""
 tell application "Evernote"
-	set pnotes to find notes " created:20160718T201147 -created:20160718T201151"
-	set count1 to count of pnotes
-	if count1 equals 1 then
-		set note1 to item 1 of pnotes
-	else
-		set note1 to missing value
-	end if
+	set note1 to find note "evernote:///view/2147483647/s482/9f9bda53-d331-49c0-a792-76b04a52f850/9f9bda53-d331-49c0-a792-76b04a52f850/"
 	if note1 is not missing value then
 		if (notebook named "Business" exists) then
 			move note1 to notebook "Business"

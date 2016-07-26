@@ -5,11 +5,42 @@
 <div title="evnd-toc-div" style="display: block; width: 100%;">
 <ul title="evnd-toc" style="list-style-type: none; margin: 15px 10px 15px 0; margin-bottom: 50px; margin-left: 10px; margin-right: 10px; margin-top: 50px; padding-bottom: 3px; padding-left: 10px; padding-right: 10px; padding-top: 3px;"/>
 </div>
-<p style="margin: 15px 10px 15px 0;">#</p>
+<ul style="margin: 15px 10px 15px 0; padding-left: 30px;">
+<li style="list-style-type: disc;">
+<p style="margin: 15px 10px 15px 0; margin-top: 0;">领域模型:</p>
+<blockquote style="background-color: #f4f7f9; border-left: 10px solid #e5ecf0; color: #2c2c2c; margin: 15px 10px 15px 0; padding: 15px 15px;">
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0; margin-top: 0;">很多因素会使软件开发复杂化，但最根本的原因是问题领域本身的错综复杂，然而开发软件无法回避这种这种复杂度，所以只能做的只用控制这种复杂度。控制复杂性最关键的是有一个很好的领域模型。</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">领域建模过程不应将概念与实现割裂开。</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">不应该先设计，在构建(先建模，后实现)强大的领域模型是随着时间演进的</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">官僚主义、目标不清、资源缺乏等都会导致项目偏离轨道，但是真正决定软件复杂度的是设计方法，一些设计因素是技术上的，大部分软件最主要的复杂度不在技术上，而是在领域本身、用户的活动或业务。</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">领域驱动设计的实质就是消化吸收大量知识，最后产生一个反映深层次领域知识并聚焦于关键概念的模型。这是领域专家和开发人员协作过程，经过开发迭代把这种协作贯穿到整个项目的生命周期。</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">模型是一种简化，对现实的解释，把与解决问题密切相关的方面抽象出来而忽略无关的细节。</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">执行用户的模型活动或满足用户的某种需求，用户的问题区域就是软件的领域，软件领域一般与计算机关系不大。</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">模型是解决信息超载问题的工具、模型这种知识形式对知识进行了选择性的简化和有意的结构化，适当的模型可以使人理解信息的意义，并专注于问题。是一种选择性的抽象。</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">业务活动和规则如同涉及的实体一样，都是领域的核心。</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">如果没有统一的公共语言，则会导致开发-&gt;开发 开发-&gt;领域专家 不同团队间不能浑然一体，模型的知识和想法无法结合到一起。</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">如果语言支离破碎，项目必将遇到严重问题，一个概念被翻译来翻译去，弱化了知识的消化，对领域不能深刻理解，无法记录到文档或代码。翻译和误解的开销成本很高。</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">开发人员应该基于模型的语言来描述系统中的工件，任务和功能。并且领域专家基于这个相互交流，讨论需求、开发计划和特性。</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">对领域的抽象，开发人员怎么判断抽象的是否合理，是否像领域专家样深入理解领域。</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">细节过多的结果是“只见树木，不见森林”。</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">设计中的重要细节应该在代码中提现出来，良好的实现应该是透明的。</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">项目文档应该是对代码的一种补充，必须深入到各种项目活动中，把文档减少至最少。</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0; margin-bottom: 0;">好的编程风格尽力是变量、代码组织方式、方法名应可能的严格，使这种联系直接化。</p>
+</blockquote>
+<p style="margin: 15px 10px 15px 0;">&gt;</p>
+<p style="margin: 15px 10px 15px 0;">&gt;</p>
+<p style="margin: 15px 10px 15px 0;">&gt;</p>
+<p style="margin: 15px 10px 15px 0;">&gt;</p>
+<p style="margin: 15px 10px 15px 0;">&gt;</p>
+<p style="margin: 15px 10px 15px 0;">&gt;</p>
+<p style="margin: 15px 10px 15px 0;">&gt;</p>
+</li>
+<li style="list-style-type: disc;"><a href="%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91&amp;XP" style="color: #4183c4; margin-top: 0;">Surviving Object-Oriented Projects</a></li>
+</ul>
 <div style="display: none; margin-bottom: 0;" title="evnd-note-id">
 <p style="margin: 15px 10px 15px 0;">[Note ID: cc4e2b7fb5cb9df44cb8faae688a287d]</p>
 <div style="display: none;" title="evnd-time-stamp">
-<p>2016-07-18 20:11:57</p>
+<p>2016-07-26 17:16:06</p>
 </div>
 </div>
 </div>
