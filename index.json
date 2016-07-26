@@ -2,7 +2,7 @@
     "[Note ID: cc4e2b7fb5cb9df44cb8faae688a287d]": {
         "creationTime": "2016-07-18 20:11:26",
         "enCreationDate": "20160718T201149",
-        "lastSyncDate": "20160718T201157",
+        "lastSyncDate": "20160726T171652",
         "enModificationDate": "20160726T171652",
         "modificationTime": "2016-07-26 17:16:06",
         "metaDate": null,
@@ -41,6 +41,7 @@
         },
         "contentMD5": "8df54853f256b92c05adebb35d181323",
         "filePath": "/Users/lumint/.atom/evnd/20160718/domain_driven_design.markdown",
-        "moved": false
+        "moved": false,
+        "dontChangeTime": true
     }
 }

@@ -54,13 +54,7 @@ end noteInfoToString
 
 tell application "Evernote"
 	set infostring to missing value
-	set pnotes to find notes "[Note ID: cc4e2b7fb5cb9df44cb8faae688a287d] created:20160718T201147 -created:20160718T201151"
-	set count1 to count of pnotes
-	if count1 equals 1 then
-		set note1 to item 1 of pnotes
-	else
-		set note1 to missing value
-	end if
+	set note1 to find note "evernote:///view/2147483647/s482/9f9bda53-d331-49c0-a792-76b04a52f850/9f9bda53-d331-49c0-a792-76b04a52f850/"
 	if note1 is not missing value then
 		set title1 to title of note1
 		set cdate1 to creation date of note1
