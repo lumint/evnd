@@ -5,16 +5,16 @@ on readFile(unixPath)
 	return newcontent
 end readFile
 
-set newcontent to readFile("/Users/lumint/.atom/evnd/20160718/domain_driven_design.enml")
+set newcontent to readFile("/Users/lumint/.atom/evnd/20160726/mysql_refman_document.enml")
 set infostr to ""
 tell application "Evernote"
-	set note1 to create note title "Domain Driven Design" with enml newcontent tags {"evnd", "code", "microservice"} 
-	if (notebook named "Myself Stack" exists) then
-		move note1 to notebook "Myself Stack"
+	set note1 to create note title "MySQL Refman Document" with enml newcontent tags {"evnd", "mysql", "database"} 
+	if (notebook named "Core" exists) then
+		move note1 to notebook "Core"
 	else
 		set infostr to infostr & "(notebook does not exist)"
 	end if
-	set source URL of note1 to "/Users/lumint/.atom/evnd/20160718/domain_driven_design.enml"
+	set source URL of note1 to "/Users/lumint/.atom/evnd/20160726/mysql_refman_document.enml"
 	set date1 to creation date of note1
 end tell
 

@@ -1,1 +1,60 @@
-<en-note><p>Hello World!</p></en-note>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd">
+<en-note>
+<div style="background-color: #fff; box-sizing: border-box; color: black; font-family: 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; line-height: 1.6; min-width: 680px; padding: 20px;">
+<div title="evnd-toc-div" style="display: block; width: 100%;">
+<ul title="evnd-toc" style="list-style-type: none; margin: 15px 10px 15px 0; margin-bottom: 50px; margin-left: 10px; margin-right: 10px; margin-top: 50px; padding-bottom: 3px; padding-left: 10px; padding-right: 10px; padding-top: 3px;"/>
+</div>
+<ul style="margin: 15px 10px 15px 0; padding-left: 30px;">
+<li style="list-style-type: disc;">
+<p style="margin: 15px 10px 15px 0; margin-top: 0;">Mysql Optimizimh at the Database Level:</p>
+<blockquote style="background-color: #f4f7f9; border-left: 10px solid #e5ecf0; color: #2c2c2c; margin: 15px 10px 15px 0; padding: 15px 15px;">
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0; margin-top: 0;">Are the talbes structured properly？ columns have the right data type？(application that perform frequent updates often have many tables with few columns,while applications that analyze large amounts of data often have few tables with many columns);</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">Are the right indexes in place to make queries efficient?</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">Are you using the appropriate storage engine for each table and taking advantage of the strengths and features of each storage engine you use ?</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">Does each table use an appropriate row format? (choice also depends on the storage engine used for the table. In particular,compressed tables use less disk space and so require less disk I/O to read and write the data,Compression is available for all kinds of workloads with InnoDB tables and for read-only tables.)</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">Does the application use an appropriate locking strategy?(For examplate, shared access possible can run concurrently and requesting exclusive access when appropriate so that critical get top priority. reducing the amount of experimenttation and tuning for you code.)</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0; margin-bottom: 0;">Are all memory areas used for caching sized correctly?That is, large enough to hold frequently accessed data,but not so large that they overload physical memory and cause paging. The main memory areas to configure are the InnoDB buffer pool, the MyISAM key cache and the MySQL query cache.</p>
+</blockquote>
+</li>
+<li style="list-style-type: disc;">
+<p style="margin: 15px 10px 15px 0; margin-top: 0;">Speed of SELECT Statements</p>
+<blockquote style="background-color: #f4f7f9; border-left: 10px solid #e5ecf0; color: #2c2c2c; margin: 15px 10px 15px 0; padding: 15px 15px;">
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0; margin-top: 0;">To make a slow SELECT ... WHERE query faster,the first thing to check is whether you can add an index.(<code style="background-color: #fbf6f8; border: 1px solid #f3e4ea; border-radius: 3px; color: #c7254e; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 16px; font-weight: inherit; line-height: 1.6; margin: 0 2px; padding: 0 5px; text-shadow: none; white-space: nowrap;">indexs are especially important for queries that reference different tables,using features such as joins and foreign keys</code>)</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">Isolate and tune any part of the query,such as function call,that takes excessive time.</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">Minimize the number of full tables scans in you queries.(<code style="background-color: #fbf6f8; border: 1px solid #f3e4ea; border-radius: 3px; color: #c7254e; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 16px; font-weight: inherit; line-height: 1.6; margin: 0 2px; padding: 0 5px; text-shadow: none; white-space: nowrap;">full tables scans frequently these operations occur,and the sizes of the tables relative to available memory,have implications for the algorithms used in query optimization and managing the buffer pool</code>)</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">Keep table statistics up to date by using the analyze_table statements periodically,so the optimizer has the information needed to construct an efficient execution plan.</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">Learn the tuning techniques,indeing techniques,and configuration parameters that are specific to the storage engine for each table.(See <code style="background-color: #fbf6f8; border: 1px solid #f3e4ea; border-radius: 3px; color: #c7254e; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 16px; font-weight: inherit; line-height: 1.6; margin: 0 2px; padding: 0 5px; text-shadow: none; white-space: nowrap;">Optimizing InnoDB Queries</code>)</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">You can optimize single-query transactions for InnoDB tables,using the technique in <code style="background-color: #fbf6f8; border: 1px solid #f3e4ea; border-radius: 3px; color: #c7254e; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 16px; font-weight: inherit; line-height: 1.6; margin: 0 2px; padding: 0 5px; text-shadow: none; white-space: nowrap;">Optimizing InnoDB Read-Only Transactions</code>.</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">Avoid transforming the query in ways that make it hard to understand.</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">If a performance issue is not easily solved,reading the EXPLAIN plan and adjusting your indexes,WHERE clauses,join clauses and so on.</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">Adjust the size and properties of the memory ares that MySQL uses for caching.(InnoDB buffer pool,MyISAM key cache,NySQL query cache)</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">Even for a query that runs fast using thr cache memory areas,you might still optimize further so that they require less cache memory,making your app more scalable.</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0; margin-bottom: 0;">Deal with locking issues,where the speed of your query might be affected by other sessions accessing the tables at the same time.</p>
+</blockquote>
+</li>
+<li style="list-style-type: disc;">
+<p style="margin: 15px 10px 15px 0; margin-top: 0;">Optimizes WHERE Clauses</p>
+<blockquote style="background-color: #f4f7f9; border-left: 10px solid #e5ecf0; color: #2c2c2c; margin: 15px 10px 15px 0; padding: 15px 15px;">
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0; margin-top: 0;">You might be tempted to rewirte your queries to make arithmetic operation faster,while sacrificing readability.(Because MySQL does similar optimizations automatically,you can often avoid this work.)</p>
+<pre title="fenced-code-block-text" style="background-color: #ececec; border-radius: 2px; color: #000000; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 16px; font-weight: inherit; line-height: 1.6; margin: 5px 10px 5px 0; padding: 10px 20px; white-space: pre-wrap; word-break: break-all; word-wrap: break-word;">
+<span style="display: block;"><span><span><span>((a AND b) AND c OR (((a AND b) AND (c AND d))))</span></span></span></span><span style="display: block;"><span><span><span>-&gt; (a AND b AND c) OR (a AND b AND c AND d)</span></span></span></span><span style="display: block;"><span><span><span>---------------------------------------------</span></span></span></span><span style="display: block;"><span><span><span>(a&lt;b AND b=c) AND a=5</span></span></span></span><span style="display: block;"><span><span><span>-&gt; b&gt;5 AND b=c AND a=5</span></span></span></span><span style="display: block;"><span><span><span>---------------------------------------------</span></span></span></span><span style="display: block;"><span><span><span>(B&gt;=5 AND B=5) OR (B=6 AND 5=5) OR (B=7 AND 5=6)</span></span></span></span><span style="display: block;"><span><span><span>-&gt; B=5 OR B=6</span></span></span></span>
+</pre>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">Constant expressions used by indexes are evaluated only once.</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">COUNT(*) on a single table without a WHERE is retieved directly from the table information for MyISAM and MEMEORY tables.This is also done for and NOT NULL expression when used with only one table.</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">All constant tables are read first before any other tables in the query.</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">If all columns in ORDER BY and GROUP BY clauses come from the same table,that table is preferred first when joining.</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0;">If there is an ORDER BY clause and a different GROUP BY clause,or if the ORDER BY or GROUP BY contains columns from tables other than the first table in the join queue, a temporary table is created.</p>
+<p style="font-size: 16px; line-height: 1.5; margin: 15px 10px 15px 0; margin-bottom: 0;">If you use the SQL_SMALL_RESULT option,MySQL uses an in-mmory temporary table.</p>
+</blockquote>
+</li>
+</ul>
+<div style="display: none; margin-bottom: 0;" title="evnd-note-id">
+<p style="margin: 15px 10px 15px 0;">[Note ID: 6f6440d2647e0c3f0e3ce390ac05f4f8]</p>
+<div style="display: none;" title="evnd-time-stamp">
+<p>2016-07-28 15:01:43</p>
+</div>
+</div>
+</div>
+</en-note>
+

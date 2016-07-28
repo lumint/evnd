@@ -43,5 +43,46 @@
         "filePath": "/Users/lumint/.atom/evnd/20160718/domain_driven_design.markdown",
         "moved": false,
         "dontChangeTime": true
+    },
+    "[Note ID: 6f6440d2647e0c3f0e3ce390ac05f4f8]": {
+        "creationTime": "2016-07-26 17:19:26",
+        "enCreationDate": "20160728T150143",
+        "lastSyncDate": null,
+        "enModificationDate": "20160728T150143",
+        "modificationTime": "2016-07-28 15:01:43",
+        "metaDate": null,
+        "dir": "20160726/",
+        "path": "/Users/lumint/.atom/evnd/20160726",
+        "title": "MySQL Refman Document",
+        "noteLink": null,
+        "tags": [
+            "evnd",
+            "mysql",
+            "database"
+        ],
+        "notebook": {
+            "name": "Core",
+            "type": "synchronized"
+        },
+        "enExportedFiles": [],
+        "format": "Markdown",
+        "fnStem": "mysql_refman_document",
+        "enml": null,
+        "attachments": {},
+        "addAttachments": false,
+        "text": null,
+        "html": null,
+        "rawHTML": null,
+        "css": null,
+        "syncdContent": null,
+        "id": "[Note ID: 6f6440d2647e0c3f0e3ce390ac05f4f8]",
+        "header": "<head><title>MySQL Refman Document</title><link rel=\"stylesheet\" type=\"text/css\" href=\"mysql_refman_document_style.css\"></head>",
+        "queryString": "[Note ID: 6f6440d2647e0c3f0e3ce390ac05f4f8] created:20160728T150141 -created:20160728T150145",
+        "renderOptions": {
+            "mathjax": true
+        },
+        "contentMD5": "947257e1fbd5a0bb3929c748dca795fd",
+        "filePath": "/Users/lumint/.atom/evnd/20160726/mysql_refman_document.markdown",
+        "moved": false
     }
 }

@@ -5,17 +5,23 @@ on readFile(unixPath)
 	return newcontent
 end readFile
 
-set newcontent to readFile("/Users/lumint/.atom/evnd/20160718/domain_driven_design.html")
+set newcontent to readFile("/Users/lumint/.atom/evnd/20160726/mysql_refman_document.html")
 set infostr to ""
 tell application "Evernote"
-	set note1 to find note "evernote:///view/2147483647/s482/9f9bda53-d331-49c0-a792-76b04a52f850/9f9bda53-d331-49c0-a792-76b04a52f850/"
+	set pnotes to find notes " created:20160728T150141 -created:20160728T150145 notebook:\"Core\""
+	set count1 to count of pnotes
+	if count1 equals 1 then
+		set note1 to item 1 of pnotes
+	else
+		set note1 to missing value
+	end if
 	if note1 is not missing value then
-		if (notebook named "Business" exists) then
-			move note1 to notebook "Business"
+		if (notebook named "Core" exists) then
+			move note1 to notebook "Core"
 		else
 			set infostr to infostr & "(notebook does not exist)"
 		end if
-		set title of note1 to "Domain Driven Design"
+		set title of note1 to "MySQL Refman Document"
 		set HTML content of note1 to newcontent
 		set oldtags to tags of note1
 		set count2 to count of oldtags
@@ -28,16 +34,16 @@ tell application "Evernote"
 			set tag1 to tag "evnd"
 		end if
 		assign tag1 to note1
-		if (not (tag named "code" exists)) then
-			set tag1 to make tag with properties {name: "code"}
+		if (not (tag named "mysql" exists)) then
+			set tag1 to make tag with properties {name: "mysql"}
 		else
-			set tag1 to tag "code"
+			set tag1 to tag "mysql"
 		end if
 		assign tag1 to note1
-		if (not (tag named "microservice" exists)) then
-			set tag1 to make tag with properties {name: "microservice"}
+		if (not (tag named "database" exists)) then
+			set tag1 to make tag with properties {name: "database"}
 		else
-			set tag1 to tag "microservice"
+			set tag1 to tag "database"
 		end if
 		assign tag1 to note1
 		set date1 to modification date of note1
